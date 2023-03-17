@@ -34,6 +34,7 @@ select,
 option {
   font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
+  line-height: 1.6;
 }
 
 ::placeholder {
@@ -52,6 +53,7 @@ h4,
 h5,
 h6 {
   color: var(--text-color-dark);
+  line-height: 1.236;
 }
 
 p {
@@ -61,6 +63,7 @@ p {
 h1 {
   font-family: 'Inter', sans-serif;
   font-size: 1.75rem;
+  line-height: 1.2;
 }
 
 h2 {
