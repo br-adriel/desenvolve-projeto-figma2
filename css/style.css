@@ -1,5 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Quicksand:wght@400;600;700&display=swap');
+
+:root {
+  font-size: 16px;
+  --primary-color: #2639ed;
+  --primary-color-alt: #3649fd;
+  --faded-primary-color: #f4f9ff;
+
+  --background-color: #fefefe;
+  --input-border-color: #f1f1f1;
+
+  --card-background-color: #fff;
+  --card-border-color: #f2f2f2;
+
+  --separator-color: #e4e4e4;
+
+  --placeholder-text-color: #959595;
+
+  --text-color-lighter: #a4a4a4;
+  --text-color-light: #757575;
+  --text-color: #565656;
+  --text-color-dark: #000;
+}
 
 * {
+  box-sizing: border-box;
+}
+
+body,
+input,
+button,
+textarea,
+select,
+option {
   font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+}
+
+::placeholder {
+  color: var(--placeholder-text-color);
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color-dark);
+}
+
+p {
+  color: var(--text-color);
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button,
+.btn {
+  background-color: var(--primary-color);
+  padding: 20px 40px;
+  border: none;
+  border-radius: 60px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+  text-decoration: none;
+  background-color: var(--primary-color-alt);
+  transform: scale(0.97);
+}
+
+input,
+textarea,
+select,
+option {
+  border: 1px solid var(--input-border-color);
+  background-color: var(--card-background-color);
+  caret-color: var(--primary-color);
+  padding: 8px;
+  border-radius: 24px;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+option:focus {
+  outline: 2px solid var(--primary-color);
 }
