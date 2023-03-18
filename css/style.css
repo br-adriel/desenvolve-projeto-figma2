@@ -201,7 +201,14 @@ nav a:hover {
 }
 
 .hero .hero__imagem {
+  flex-shrink: 0;
+  width: 57%;
   position: relative;
+}
+
+.hero .hero__imagem .imagem_apresentacao {
+  width: 100%;
+  object-fit: contain;
 }
 
 .hero .circulo-azul {
