@@ -37,6 +37,10 @@ option {
   line-height: 1.6;
 }
 
+body {
+  background-color: var(--background-color);
+}
+
 ::placeholder {
   color: var(--placeholder-text-color);
 }
