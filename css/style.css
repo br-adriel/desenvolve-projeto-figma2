@@ -134,3 +134,35 @@ select:focus,
 option:focus {
   outline: 2px solid var(--primary-color);
 }
+
+.container {
+  margin: 0 auto;
+  width: min(1200px, 100%);
+}
+
+header {
+  padding: 0 16px;
+}
+
+header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  padding: 48px 0;
+  gap: 60px;
+  color: var(--text-color-dark);
+}
+
+nav a {
+  color: inherit;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--primary-color-alt);
+}
