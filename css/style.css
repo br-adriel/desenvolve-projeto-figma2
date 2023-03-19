@@ -232,3 +232,23 @@ nav a:hover {
   left: -53px;
   z-index: -1;
 }
+
+/* Our client */
+.our-client {
+  padding: 16px;
+}
+
+.our-client .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.our-client h2 {
+  margin-bottom: 16px;
+}
+
+.our-client p {
+  max-width: 336px;
+}
