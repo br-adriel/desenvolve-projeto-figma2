@@ -71,7 +71,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   font-weight: 700;
 }
 
@@ -251,4 +251,27 @@ nav a:hover {
 
 .our-client p {
   max-width: 336px;
+}
+
+/* Great Digital */
+.great-digital .container2 {
+  display: flex;
+
+}
+
+.great-digital__conteudo {
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.great-digital__conteudo h2 {
+  margin-top: 128px;
+  width: 60%
+}
+
+.container2 .circulo-bege {
+  position: relative;
+  top: 320px;
+  left: 650px;
+  z-index: -1;
 }
