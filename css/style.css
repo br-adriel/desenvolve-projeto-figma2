@@ -71,7 +71,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.0rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -138,34 +138,6 @@ option:focus {
 .container {
   margin: 0 auto;
   width: min(1200px, 100%);
-}
-
-/* Header */
-header {
-  padding: 0 16px;
-}
-
-header > .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header nav ul {
-  display: flex;
-  align-items: center;
-  padding: 48px 0;
-  gap: 60px;
-  color: var(--text-color-dark);
-}
-
-nav a {
-  color: inherit;
-  font-weight: 600;
-}
-
-nav a:hover {
-  color: var(--primary-color-alt);
 }
 
 /* Hero */
@@ -256,7 +228,6 @@ nav a:hover {
 /* Great Digital */
 .great-digital .container2 {
   display: flex;
-
 }
 
 .great-digital__conteudo {
@@ -266,7 +237,7 @@ nav a:hover {
 
 .great-digital__conteudo h2 {
   margin-top: 128px;
-  width: 60%
+  width: 60%;
 }
 
 .container2 .circulo-bege {
