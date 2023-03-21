@@ -16,6 +16,50 @@ header nav ul {
   color: var(--text-color-dark);
 }
 
+.header__nav-menu,
+.header__nav-close {
+  width: 40px;
+  height: 40px;
+  padding: 12px 8px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-direction: column;
+  display: none;
+}
+
+.header__nav-close {
+  padding: 18px;
+}
+
+.header__nav-menu div,
+.header__nav-close div {
+  position: relative;
+  width: 24px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+}
+
+.header__nav-menu:hover div,
+.header__nav-close:hover div {
+  background-color: #fff;
+}
+
+.header__nav-close div:first-of-type {
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.header__nav-close div:last-of-type {
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
 nav a {
   color: inherit;
   font-weight: 600;
@@ -23,4 +67,91 @@ nav a {
 
 nav a:hover {
   color: var(--primary-color-alt);
+}
+
+/* Celulares 0px - 765px */
+@media screen and (max-width: 767px) {
+  header {
+    padding: 16px;
+  }
+
+  header nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  header nav.closed {
+    display: flex;
+    animation-name: fechar-nav-animation;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+  }
+
+  header nav.open {
+    display: flex;
+    z-index: 1;
+    animation-name: abrir-nav-animation;
+    animation-duration: 0.3s;
+  }
+
+  header nav.open .header__nav-close {
+    display: flex;
+    align-self: flex-end;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  header nav ul li::after {
+    content: ' ';
+    display: block;
+    height: 1px;
+    background-color: var(--separator-color);
+    position: relative;
+    top: 6px;
+    opacity: 0.5;
+  }
+
+  header nav ul li:last-of-type::after {
+    display: none;
+  }
+
+  .header__nav-menu {
+    display: flex;
+  }
+}
+
+/* Tablets 768px - 991px */
+@media screen and (max-width: 991px) {
+  header nav ul {
+    gap: 24px;
+  }
+}
+
+@keyframes abrir-nav-animation {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fechar-nav-animation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
 }
