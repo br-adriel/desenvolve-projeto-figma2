@@ -14,12 +14,33 @@
     <link rel="stylesheet" href="./css/help-section.css" />
 
     <title>Dev+ Studio</title>
+
+    <script src="./js/navbar.js" defer></script>
   </head>
   <body>
     <header>
       <div class="container">
         <h1>Dev+ Studio</h1>
-        <nav>
+        <button
+          type="button"
+          class="header__nav-menu"
+          title="Menu"
+          id="btn-abrir-menu"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+        <nav id="navbar">
+          <button
+            type="button"
+            class="header__nav-close"
+            title="Fechar menu"
+            id="btn-fechar-menu"
+          >
+            <div></div>
+            <div></div>
+          </button>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">What we do</a></li>
