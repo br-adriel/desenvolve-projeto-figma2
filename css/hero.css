@@ -99,3 +99,16 @@
     bottom: -56px;
   }
 }
+
+/* Tablets 768px - 991px */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero__conteudo {
+    width: 85%;
+    padding-left: 16px;
+  }
+
+  .hero__imagem {
+    width: 85%;
+    align-self: flex-end;
+  }
+}
