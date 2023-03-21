@@ -85,6 +85,7 @@ nav a:hover {
     background-color: var(--background-color);
     flex-direction: column;
     padding: 16px;
+    overflow-y: auto;
   }
 
   header nav.closed {
