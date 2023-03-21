@@ -69,7 +69,8 @@ nav a:hover {
   color: var(--primary-color-alt);
 }
 
-@media screen and (max-width: 576px) {
+/* Celulares 0px - 765px */
+@media screen and (max-width: 767px) {
   header {
     padding: 16px;
   }
@@ -127,6 +128,13 @@ nav a:hover {
 
   .header__nav-menu {
     display: flex;
+  }
+}
+
+/* Tablets 768px - 991px */
+@media screen and (max-width: 991px) {
+  header nav ul {
+    gap: 24px;
   }
 }
 
