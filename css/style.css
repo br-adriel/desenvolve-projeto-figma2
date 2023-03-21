@@ -71,7 +71,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
@@ -138,4 +138,13 @@ option:focus {
 .container {
   margin: 0 auto;
   width: min(1200px, 100%);
+}
+
+.container2 {
+  width: 100%;
+  text-align: left;
+}
+
+.great-digital__video {
+  max-width: 100%;
 }
