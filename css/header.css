@@ -69,7 +69,7 @@ nav a:hover {
   color: var(--primary-color-alt);
 }
 
-/* Celulares 0px - 765px */
+/* Celulares 0px - 767px */
 @media screen and (max-width: 767px) {
   header {
     padding: 16px;
