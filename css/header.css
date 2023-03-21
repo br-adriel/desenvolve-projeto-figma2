@@ -132,7 +132,7 @@ nav a:hover {
 }
 
 /* Tablets 768px - 991px */
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   header nav ul {
     gap: 24px;
   }
