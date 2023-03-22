@@ -59,6 +59,8 @@
   border-radius: 40px;
   padding: 40px 32px;
   text-align: center;
+  opacity: 0;
+  animation-delay: 300ms;
 }
 
 .help-section__card > div {
