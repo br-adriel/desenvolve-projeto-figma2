@@ -124,15 +124,32 @@ option {
   border: 1px solid var(--input-border-color);
   background-color: var(--card-background-color);
   caret-color: var(--primary-color);
-  padding: 8px;
-  border-radius: 24px;
+  padding: 30px;
+  border-radius: 60px;
 }
 
-input:focus,
+
 textarea:focus,
 select:focus,
 option:focus {
   outline: 2px solid var(--primary-color);
+}
+
+.subscribe__conteudo__input{
+  position: relative;
+}
+
+.subscribe__conteudo__input input:focus ~ span {
+  transform: translateY(-55px);
+}
+
+.subscribe__conteudo__input span{
+  position: absolute;
+  left: 32px;
+  top: 30px;
+  pointer-events: none;
+  transition: 0.5s;
+  opacity: 0.5;
 }
 
 .container {
