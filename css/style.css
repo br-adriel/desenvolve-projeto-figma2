@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Quicksand:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
 
 :root {
   font-size: 16px;
@@ -128,14 +128,13 @@ option {
   border-radius: 60px;
 }
 
-
 textarea:focus,
 select:focus,
 option:focus {
   outline: 2px solid var(--primary-color);
 }
 
-.subscribe__conteudo__input{
+.subscribe__conteudo__input {
   position: relative;
 }
 
@@ -143,7 +142,7 @@ option:focus {
   transform: translateY(-55px);
 }
 
-.subscribe__conteudo__input span{
+.subscribe__conteudo__input span {
   position: absolute;
   left: 32px;
   top: 30px;
