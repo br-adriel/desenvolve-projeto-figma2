@@ -8,7 +8,8 @@ header > .container {
   align-items: center;
 }
 
-header .logo-devstudio{
+header .logo-devstudio {
+  min-width: 140px;
   width: 22%;
 }
 
@@ -133,6 +134,14 @@ nav a:hover {
 
   .header__nav-menu {
     display: flex;
+  }
+}
+
+/* Celulares na vertical 0px - 575px */
+@media screen and (max-width: 575px) {
+  header .logo-devstudio {
+    width: 30%;
+    height: auto;
   }
 }
 
