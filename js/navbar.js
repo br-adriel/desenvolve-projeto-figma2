@@ -1,3 +1,4 @@
+/* Controla exibição do menu de navegação em telas pequenas */
 const btnAbrirMenu = document.getElementById('btn-abrir-menu');
 const btnFecharMenu = document.getElementById('btn-fechar-menu');
 const navbar = document.getElementById('navbar');
