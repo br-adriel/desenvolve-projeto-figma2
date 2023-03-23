@@ -1,16 +1,50 @@
-.roda-pe{
-    display: block;
+.roda-pe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.roda-pe__conteudo{
-    display: flex;
-    align-items: center;
-
+.roda-pe .container {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--separator-color);
+  border-bottom: 1px solid var(--input-border-color);
+  padding-top: 64px;
+  padding-bottom: 28px;
 }
 
-.roda-pe__nav{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 128px;
+.roda-pe__conteudo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 190px;
+}
+
+.roda-pe__esquerda {
+  margin-top: 52px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.roda-pe .redes__sociais {
+  display: flex;
+  gap: 16px;
+}
+
+.roda-pe__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  flex-grow: 1;
+  margin-left: 0;
+}
+
+.roda-pe__nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.roda-pe__nav li {
+  text-transform: capitalize;
 }

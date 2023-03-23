@@ -1,9 +1,9 @@
-.great-digital{
+.great-digital {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.container2{
+.container2 {
   display: flex;
   justify-content: space-between;
 }
@@ -26,7 +26,7 @@
   flex-grow: 2;
 }
 
-.container2 .borda-arredondada-azul{
+.container2 .borda-arredondada-azul {
   position: relative;
   top: 52px;
   left: 118px;
