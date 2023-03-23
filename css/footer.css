@@ -1,0 +1,16 @@
+.roda-pe{
+    display: block;
+}
+
+.roda-pe__conteudo{
+    display: flex;
+    align-items: center;
+
+}
+
+.roda-pe__nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 128px;
+}
