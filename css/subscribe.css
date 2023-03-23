@@ -1,62 +1,88 @@
 .subscribe {
-  padding-top: 400px;
-  margin-bottom: -500px;
+  padding: 120px 16px;
+  /* margin: 120px 0; */
   overflow-x: hidden;
 }
 
-.subscribe__conteudo {
+.subscribe .container {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 101px;
+  padding: 24px 48px;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 292px;
 }
 
-.subscribe__conteudo h2 {
-  margin-left: 75px;
+.subscribe form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe__contedo {
+  flex-grow: 1;
+  max-width: 45%;
+}
+
+.subscribe__conteudo__input {
+  position: relative;
+  left: -120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  min-width: 479px;
+  box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 60px;
+  background-color: var(--card-background-color);
+  padding: 10px;
+  border: 1px solid var(--input-border-color);
+}
+
+.subscribe__conteudo__input:focus-within {
+  outline: 1px solid var(--primary-color);
+}
+
+.subscribe__conteudo__input input {
+  padding: 8px;
+  border: none;
+  padding-left: 18px;
+  width: auto;
+  flex-grow: 1;
+  outline: none;
 }
 
 .subscribe__conteudo p {
   padding-top: 1rem;
-  margin-left: 75px;
-}
-
-.subscribe__conteudo__submit {
-  position: absolute;
-  z-index: 1;
-  margin-left: 265px;
-  margin-top: 8px;
-}
-
-.subscribe__conteudo__email {
-  position: relative;
-  z-index: 0;
-  padding-inline: 160px;
-  width: 84%;
+  font-size: 1.125rem;
 }
 
 .subscribe .retangulo-med-azul {
-  position: relative;
-  top: -180px;
-  left: 680px;
-  z-index: -1;
+  position: absolute;
+  right: 0;
 }
 
 .subscribe .retangulo-log-azulceu {
-  position: relative;
-  top: -480px;
-  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .subscribe .retangulo-arredondado-amarelo {
-  position: relative;
-  top: -623px;
-  left: -40px;
+  position: absolute;
+  bottom: -39px;
+  left: -38px;
   z-index: -3;
 }
 
 .subscribe .pontos-azul-ciano {
-  position: relative;
-  top: -861px;
-  left: 882px;
+  position: absolute;
+  top: -56px;
+  right: -37px;
   z-index: -4;
 }
